@@ -2,26 +2,28 @@
   "rpmName": "test",
   "rpmVersion": "1.0",
   "rpmNeedarch": "x86_64",
+  "description": "The Hadoop Distributed File System",
   "originalPath": "/data/bigdata/rpm-package/src/main/resources/example",
   "targetRpmPath": "/data/bigdata/rpm-package/src/main/resources",
   "dirMappings":
           [
             {
               "from": "/var",
-              "to":"/home/xiaozhch5/example/var",
+              "to":"/home/dxd/example/var",
               "execute": "",
-              "filemode": "755",
+              "dirmode": "755",
+              "filemode": "644",
               "userName": "root",
               "groupName": "root"
             },
             {
               "from": "/usr",
-              "to":"/home/xiaozhch5/example/var",
+              "to":"/home/dxd/example/var",
               "execute": ""
             },
             {
               "from": "/log",
-              "to":"/home/xiaozhch5/example/log",
+              "to":"/home/dxd/example/log",
               "execute": ""
             }
           ],

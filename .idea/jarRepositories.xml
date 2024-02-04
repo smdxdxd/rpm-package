@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="hortonworks-jetty" />
+      <option name="name" value="hortonworks-jetty" />
+      <option name="url" value="https://repo.hortonworks.com/repository/jetty-hadoop" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="alirepo" />
+      <option name="name" value="ali-repo" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -12,9 +22,24 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dtwave" />
+      <option name="name" value="dtwave" />
+      <option name="url" value="http://repo2.dtwave-inc.com/repository/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hortonworks" />
+      <option name="name" value="hortonworks" />
+      <option name="url" value="https://repo.hortonworks.com/repository/released_old" />
     </remote-repository>
   </component>
 </project>

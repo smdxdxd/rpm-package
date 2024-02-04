@@ -15,6 +15,8 @@ public class DirMapping {
 
     private String filemode;
 
+    private String dirmode;
+
     private String userName;
 
     private String groupName;
@@ -35,6 +37,10 @@ public class DirMapping {
 
     public void setFilemode(String filemode) {
         this.filemode = filemode;
+    }
+
+    public void setDirmode(String filemode) {
+        this.dirmode = dirmode;
     }
 
     public void setUserName(String userName) {
@@ -75,5 +81,9 @@ public class DirMapping {
 
     public String getFilemode() {
         return filemode;
+    }
+
+    public String getDirmode() {
+        return dirmode;
     }
 }

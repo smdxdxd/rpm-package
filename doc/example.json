@@ -8,7 +8,7 @@
   [
     {
       "from": "/var",
-      "to":"/home/xiaozhch5/example/var",
+      "to":"/home/dxd/example/var",
       "execute": "",
       "filemode": "755",
       "userName": "root",
@@ -16,12 +16,12 @@
     },
     {
       "from": "/usr",
-      "to":"/home/xiaozhch5/example/var",
+      "to":"/home/dxd/example/var",
       "execute": ""
     },
     {
       "from": "/log",
-      "to":"/home/xiaozhch5/example/log",
+      "to":"/home/dxd/example/log",
       "execute": ""
     }
   ],

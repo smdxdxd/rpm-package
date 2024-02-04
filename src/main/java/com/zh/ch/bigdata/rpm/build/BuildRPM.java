@@ -45,7 +45,7 @@ public class BuildRPM {
         long currentTimeMillis = System.currentTimeMillis();
         File directory = new File(targetRpmPath + "/" + rpmName + "-" + rpmVersion);
 
-        if (directory.mkdirs()) {
+        if (directory.mkdirs() || directory.exists()) {
             Writer writer = new FileWriter(directory + "/" + "pom.xml");
             mavenXpp3Writer.write(writer, model);
         }

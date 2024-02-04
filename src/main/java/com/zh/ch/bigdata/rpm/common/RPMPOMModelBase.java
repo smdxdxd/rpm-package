@@ -90,6 +90,13 @@ public class RPMPOMModelBase {
         Xpp3Dom descriptionDom = new Xpp3Dom(RPMPluginParameters.DESCRIPTION);
         Xpp3Dom autoRequiresDom = new Xpp3Dom(RPMPluginParameters.AUTOREQUIRES);
         Xpp3Dom prefixDom = new Xpp3Dom(RPMPluginParameters.PREFIX);
+        if (JsonAnalysisUtil.getString(this.mappingsString, RPMPluginParameters.PROVIDE) != null) {
+            Xpp3Dom providesDom = new Xpp3Dom(RPMPluginParameters.PROVIDES);
+            Xpp3Dom provideDom = new Xpp3Dom(RPMPluginParameters.PROVIDE);
+            provideDom.setValue(JsonAnalysisUtil.getString(this.mappingsString, RPMPluginParameters.PROVIDE));
+            providesDom.addChild(provideDom);
+            rpmConfigurationDom.addChild(providesDom);
+        }
         if (JsonAnalysisUtil.getString(this.mappingsString, RPMPluginParameters.REQUIRE) != null) {
             Xpp3Dom requiresDom = new Xpp3Dom(RPMPluginParameters.REQUIRES);
             Xpp3Dom requireDom = new Xpp3Dom(RPMPluginParameters.REQUIRE);
@@ -102,7 +109,7 @@ public class RPMPOMModelBase {
         needarchDom.setValue(JsonAnalysisUtil.getString(this.mappingsString, RPMPluginParameters.RPMNEEDARCH));
         licenseDom.setValue(RPMPluginParametersDefaultValue.LICENSEDEFAULTVALUE);
         groupDom.setValue(RPMPluginParametersDefaultValue.GROUPDEFAULTVALUE);
-        descriptionDom.setValue(RPMPluginParametersDefaultValue.DESCRIPTIONDEFAULTVALUE);
+        descriptionDom.setValue(JsonAnalysisUtil.getString(this.mappingsString, RPMPluginParameters.DESCRIPTION));
         autoRequiresDom.setValue(RPMPluginParametersDefaultValue.AUTOREQUIRESDEFAULTVALUE);
         prefixDom.setValue(RPMPluginParametersDefaultValue.PREFIXDEFAULTVALUE);
         rpmConfigurationDom.addChild(nameDom);

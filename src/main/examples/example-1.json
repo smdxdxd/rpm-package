@@ -2,6 +2,7 @@
   "rpmName": "test",
   "rpmVersion": "1.0",
   "rpmNeedarch": "x86_64",
+  "description": "The Hadoop Distributed File System",
   "originalPath": "/root/rpm-package-1.0-bin/examples",
   "targetRpmPath": "/root",
   "dirMappings":

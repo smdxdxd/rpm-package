@@ -51,6 +51,10 @@ public class RPMPluginParameters {
 
     public static String PREFIX = "prefix";
 
+    public static String PROVIDES = "provides";
+
+    public static String PROVIDE = "provide";
+
     public static String REQUIRES = "requires";
 
     public static String REQUIRE = "require";
@@ -78,6 +82,8 @@ public class RPMPluginParameters {
     public static String DOCUMENTATION = "documentation";
 
     public static String FILEMODE = "filemode";
+
+    public static String DIRMODE = "dirmode";
 
     public static String GROUPNAME = "groupname";
 

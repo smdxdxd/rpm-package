@@ -27,6 +27,7 @@ java -cp ./lib/rpm-package-1.0.jar:./lib/* com.zh.ch.bigdata.rpm.build.BuildRPM 
 rpmName=$(cat ${mappingsFilePath} | grep rpmName | sed s/[[:space:]]//g | sed 's/\"//g')
 rpmVersion=$(cat ${mappingsFilePath} | grep rpmVersion | sed s/[[:space:]]//g | sed 's/\"//g')
 targetRpmPath=$(cat ${mappingsFilePath} | grep targetRpmPath | sed s/[[:space:]]//g | sed 's/\"//g')
+description=$(cat ${mappingsFilePath} | grep description | sed s/[[:space:]]//g | sed 's/\"//g')
 temp_name=${rpmName//,/}
 temp_version=${rpmVersion//,/}
 temp_rpmPath=${targetRpmPath//,/}

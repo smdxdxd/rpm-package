@@ -10,8 +10,5 @@
         <module name="rpm-package" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="rpm-package" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,9 +2,9 @@ package com.zh.ch.bigdata.rpm.constant;
 
 public class RPMPluginParametersDefaultValue {
 
-    public static String LICENSEDEFAULTVALUE = "xiaozhch5";
+    public static String LICENSEDEFAULTVALUE = "Apache License v2.0";
 
-    public static String GROUPDEFAULTVALUE = "xiaozhch5";
+    public static String GROUPDEFAULTVALUE = "System/Daemons";
 
     public static String DESCRIPTIONDEFAULTVALUE = "build rpm from any files/dirs";
 
@@ -19,6 +19,5 @@ public class RPMPluginParametersDefaultValue {
     public static String USERNAMEDEFAULTVALUE = "root";
 
     public static String GROUPNAMEDEFAULTVALUE = "root";
-
 
 }
